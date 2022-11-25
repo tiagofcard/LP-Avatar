@@ -76,6 +76,19 @@ main {
     padding-top: var(--header-height);
 }
 
+.banner-container {
+    position: relative;
+}
+
 .banner-container img {
     width: 100%;
+}
+
+#avatar-logo {
+    width: 450px;
+    position: absolute;
+    bottom: 20%;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
