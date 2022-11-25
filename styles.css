@@ -11,6 +11,7 @@
     --header-height: 76px;
     --main-blue: #015ca1;
     --header-padding: 30px;
+    --dark-blue: #243b53;
 }
 
 body > header {
@@ -36,6 +37,11 @@ body > header ul {
 
 body > header ul li:first-child {
     font-weight: 600;
+}
+
+li a:hover {
+    cursor: pointer;
+    text-shadow: 0 0 0.65px var(--dark-blue), 0 0 0.65px var(--dark-blue);
 }
 
 .social {
