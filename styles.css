@@ -73,8 +73,8 @@ ul#menu li a:hover {
 }
 
 .social i:hover {
-    -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
-    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    -webkit-animation: change-color-and-pulse 2s linear infinite both;
+    animation: change-color-and-pulse 2s linear infinite both;
 }
 
 main {
@@ -241,12 +241,46 @@ main {
     100% {
       background: #b22cff;
     }
-  }
-  @keyframes color-change-2x {
+}
+
+@keyframes color-change-2x {
     0% {
       background: #19dcea;
     }
     100% {
       background: #b22cff;
+    }
+}
+
+@keyframes change-color-and-pulse {
+    0% {
+      color: #19dcea;
+      transform: scale(1);
+    }
+    13% {
+        transform: scale(1.3);
+    }
+    25% {
+        transform: scale(1);
+    }
+    38% {
+        transform: scale(1.3);
+    }
+    50% {
+        color: #b22cff;
+        transform: scale(1);
+    }
+    63% {
+        transform: scale(1.3);
+    }
+    75% {
+        transform: scale(1);
+    }
+    88% {
+        transform: scale(1.3);
+    }
+    100% {
+      color: #19dcea;
+      transform: scale(1);
     }
   }
