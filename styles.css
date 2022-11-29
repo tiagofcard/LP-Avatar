@@ -27,7 +27,6 @@ body {
 body > header {
     height: var(--header-height);
     background-color: white;
-    /* padding: 0 var(--header-padding); */
     position: absolute;
     left: 0;
     right: 0;
